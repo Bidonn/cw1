@@ -53,8 +53,4 @@ public abstract class Kontener
                $"Height: {Height} cm\n" +
                $"Depth: {Depth} cm";
     }
-    ~Kontener() 
-    {
-        Console.WriteLine($"Usunięto kontener nr.: {SerialNumber}");
-    }
 }

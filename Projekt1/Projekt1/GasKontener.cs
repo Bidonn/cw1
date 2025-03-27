@@ -27,5 +27,9 @@ namespace Projekt1
         {
             Mass = Mass * 0.05;
         }
+        public override string ToString()
+        {
+            return base.ToString() + $"\nAtmosphere: {ATM} atm";
+        }
     }
 }

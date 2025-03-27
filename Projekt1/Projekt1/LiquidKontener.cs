@@ -36,5 +36,9 @@ public class LiquidKontener : Kontener, IHazardNotifier //Kontenery tego typu po
         //Jeœli naruszymy dowoln¹ z opisanych regu³ - powinniœmy zg³osiæ informacje o próbie wykonania niebezpiecznej operacji.
         base.Load(load);
     }
+    public override string ToString()
+    {
+        return base.ToString() + $"\nHazardous Content: {HazardousContent}";
+    }
 
 }

@@ -36,5 +36,9 @@ namespace Projekt1
             typeStored = null;
             base.Unload();
         }
+        public override string ToString()
+        {
+            return base.ToString() + $"\nProduct: {typeStored}\nTemperature: {temperature}";
+        }
     }
 }
